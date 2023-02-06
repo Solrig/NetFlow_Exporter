@@ -1,4 +1,5 @@
 Hodnotenie projektu: 20b/20b
+Zadanie 1. varianty školského projektu v predmete Síťové aplikace a správa sítí (FAKULTA INFORMAČNÍCH TECHNOLOGIÍ VUT V BRNĚ) v roku 2022.
 
 # Generování NetFlow dat ze zachycené síťové komunikace
 
