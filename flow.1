@@ -1,0 +1,33 @@
+.TH FLOW 1
+.SH NAME
+flow \- export collected NetFlow data to collector
+.SH SYNOPSIS
+.B ./flow
+[\fB\-f\fR \f<<file>\fR]
+[\fB\-c\fR \f<<netflow_collector:port>\fR]
+[\fB\-a\fR \f<<active_timer>\fR]
+[\fB\-i\fR \f<<inactive_timer>\fR]
+[\fB\-m\fR \f<<count>\fR]
+.SH DESCRIPTION
+.B Flow
+is NetFlow exporter, that parses network data (packets) from pcap file and sends them to collector.
+Exporter exports data using NetFlow v5 protocol. Supported protocols are TCP, UDP and ICMP.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help\fR
+print help
+.TP
+.BR \-f " "\fR\<file>\fR
+name of pcap file, default is STDIN
+.TP
+.BR \-c " "\fR\<netflow_collector:port>\fR
+IP address/hostname of collector and optionally UDP port, default is 127.0.0.1:2055 
+.TP
+.BR \-a " "\fR\<active_timer>\fR
+interval in seconds, after this interval all active records exporter exports to collector, default is 60
+.TP
+.BR \-i " "\fR\<inactive_timer>\fR
+interval in seconds, after this interval all inactive records exporter exports to collector, default is 10
+.TP
+.BR \-m " "\fR\<count>\fR
+flow-cache size, when flow-cache size is full, exporter exports oldest record, default is 1024
