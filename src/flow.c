@@ -192,7 +192,6 @@ int main(int argc, char *argv[])
     NET_FLOW_PACKET flow_cache[flow_cache_size];
 
     // otvorenie pcap súboru
-
     if (stdin_flag == true)
         handle = pcap_fopen_offline(stdin, errbuf);
     else
