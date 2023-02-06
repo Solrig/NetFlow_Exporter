@@ -1,3 +1,5 @@
+Hodnotenie projektu: 20b/20b
+
 # Generování NetFlow dat ze zachycené síťové komunikace
 
 ### Popis: _V rámci projektu implementujte NetFlow exportér, který ze zachycených síťových dat ve formátu pcap vytvoří záznamy NetFlow, které odešle na kolektor_
